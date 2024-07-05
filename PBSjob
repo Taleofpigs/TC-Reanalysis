@@ -1,0 +1,13 @@
+#first open the terminal in Gadi
+# create a sh file by the following
+vi job.sh
+:wq #save and quit
+:q! #quit but not save
+# then we can open the .sh file in our direct and edit it
+##finish editing and submit the job to gadi
+qsub job.sh
+
+## looking up the status
+qstat -u $USER -E
+# R means running # H means hanging # Q means quene # E means close to finish 
+
