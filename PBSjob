@@ -11,3 +11,11 @@ qsub job.sh
 qstat -u $USER -E
 # R means running # H means hanging # Q means quene # E means close to finish 
 
+## update in 8/July
+for input in {1959..1979..1}; do export input; qsub -z -v input job.sh; done
+module load netcdf
+ncdump -h t_1959_1979_SP.nc
+ncdump -c t_1959_1979_SP.nc
+pip install black
+black HMPISP1959_1979-Copy1.py 
+rm *.sh.o*
