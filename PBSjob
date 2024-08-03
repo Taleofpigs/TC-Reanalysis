@@ -19,3 +19,5 @@ ncdump -c t_1959_1979_SP.nc
 pip install black
 black HMPISP1959_1979-Copy1.py 
 rm *.sh.o*
+0803
+bash job_bash.sh 
